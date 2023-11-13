@@ -5,12 +5,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "two-versions": "npm install openai4@npm:openai@4",
+    "comment": "https://stackoverflow.com/questions/43770328/two-versions-of-same-npm-package-in-node-application"
   },
   "dependencies": {
     "next": "^12.1.6",
-    "openai": "^3.0.0",
+    "openai": "3.0.0",
+    "openai4": "npm:openai@^4.17.4",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.0.7"
   }
 }
